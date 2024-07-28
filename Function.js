@@ -4,4 +4,4 @@ function user (username){
 
 let users = user("Harsh")
 
-console.log(users)
+console.log(users);

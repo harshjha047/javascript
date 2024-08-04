@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #111;
+}
+.appFrame{
+    width: 50vw;
+    padding: 5vh;
+    background-color: rgb(207, 207, 207);
+}
+.options{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+}
+.option{
+    gap: 5vh;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+    cursor: pointer;
+}
+/* .option:hover{
+    background-color: #e7e7e7;
+} */
+.btn{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(0, 221, 0);
+    margin-top: 3vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6vw;
+    font-weight: 600;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: rgb(0, 128, 0);
+    color: aliceblue;
+    border: 1px solid #fff;
+    transition: all ease, color 0.3s ease;
+}
+.correct{
+    background-color: rgb(51, 255, 0);
+}
+.inCorrect{
+    background-color: rgb(255, 0, 0);
+}

@@ -92,7 +92,7 @@ const takeCommand = (command) => {
   // }
   else if (command.includes("open")) {
     const siteName = command.split("open ")[1];
-    window.open(`https://${siteName}.com`);
+    window.open(`https://${siteName}com`);
     speak(`opening ${siteName}`);
   } else if (command.includes("close")) {
     const siteName = command.split("close ")[1];

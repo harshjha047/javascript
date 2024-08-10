@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBC8FE;
+}
+main{
+    width: 50vw;
+    /* height: 50vh; */
+    background-color: #fff;
+    border-radius: 2vh;
+    padding: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.titel{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.line{
+    width: 10%;
+    height: 2px;
+    background-color: blue;
+}
+.quote{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.author{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* border: 1px solid #000; */
+    text-transform: capitalize;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+button{
+    height: 6vh;
+    width: 9vw;
+    margin: 0.5vh;
+    border-radius: 10vw;
+    /* border: none; */
+    cursor: pointer;
+    border: 1px solid blue;
+}
+span{
+    height: 1.5px;
+    width: 1vw;
+    background-color: blue; 
+    display: block;
+    margin: 1vh;
+}
+ .btn1{
+    background-color: blue;
+    color: #fff;
+ }
+ .btn2{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+ }

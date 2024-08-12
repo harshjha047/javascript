@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100%;
+    background: #F8EFFF;
+    
+}
+main{
+    width: 50%;
+    display: flex;
+    margin: 5vw;
+    justify-content: space-evenly;
+
+}
+button{
+    height: 6vh;
+    width: 7vw;
+    font-weight: 600;
+    border-radius: 1vh;
+    border:1px solid rgb(0, 0, 0);
+    color: #F8EFFF;
+    background-color: black;
+    cursor: pointer;
+}
+.case{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1vw;
+    overflow: hidden;
+    padding: 3vw;
+}
+.box {
+    height: 13vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transform: translateX(100%);
+    animation: moveleft 0.3s linear forwards;
+}
+@keyframes moveleft {
+    100% { transform: translateX(0); }
+}
+.box i{
+    margin: 1.3vw;
+    font-size: 35px;
+}
+
+.success i{
+   color: green;
+}
+
+.error i{
+    color: red;
+}
+
+.invalid i{
+    color: yellow;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    animation: anim 5s linear forwards;
+}
+.box.error::after{
+    content: '';
+    background-color: red;
+}
+.box.invalid::after{
+    content: '';
+    background-color: yellow;
+}
+@keyframes anim {
+
+    100% {
+        width:0;
+    }
+}

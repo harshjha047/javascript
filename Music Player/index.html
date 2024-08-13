@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="top">
+            <div class="actions"><i class="fa-solid fa-arrow-rotate-left"></i></div>
+            <div class="actions"><i class="fa-solid fa-bars"></i></div>
+         </div>
+        <div class="icon"><img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt=""></div>
+        <div class="name">
+            <p>music name</p>
+            <p>music name</p>
+    </div>
+        <div class="playBar">
+        <audio controls id="song">
+            <source src="./WhatsApp Audio 2024-08-13 at 9.00.49 PM.mpeg">
+        </audio>
+        
+        <input type="range" id="bar" value="0">
+        </div>
+        <div class="btns">
+        <div class="btn"><i class="fa-solid fa-backward"></i></div>
+        <div class="btn play" onclick="playPause()"><i class="fa-solid fa-play"></i></div>
+        <div class="btn"><i class="fa-solid fa-forward"></i></div>
+    </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

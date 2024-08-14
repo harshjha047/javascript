@@ -1,7 +1,10 @@
 const bar=document.querySelector('#bar');
 const song=document.querySelector('#song');
 const playBtn =document.querySelector('.play');
+const source=document.querySelector('source');
 
+source.src = "./WhatsApp Audio 2024-08-13 at 9.00.49 PM.mpeg";
+song.innerHTML = `<source src="source.src" ></source>`
 song.onloadedmetadata = function(){
     bar.max = song.duration;
     bar.value = song.currentTime;

@@ -5,7 +5,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     color: white;
     display: flex;
@@ -13,16 +13,19 @@ body{
     justify-content: center;
 }
 main{
-    height: 95vh;
+    /* height: 95vh; */
     width: 95vw;
     background-color: gray;
     border-radius: 2vw;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    margin: 5vw;
 }
 .page{
-    height: 95vh;
+    /* height: 95vh; */
+    
+    
     width: 95vw;
     background-color: gray;
     display: flex;
@@ -54,6 +57,6 @@ main{
     align-items: center;
     cursor: pointer;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     border: 1px solid black;
  }

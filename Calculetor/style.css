@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E2F6FF;
+    color: white;
+    padding: 2vw;
+}
+main{
+    height: 80vh;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #3B4454;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(85, 85, 85);
+}
+.display{
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    height: 20vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgb(114, 114, 114);
+    font-size: larger;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+#display{
+    border-radius: 5px;
+    border: none;
+    background-color: #3B4454;
+    padding: 10px;
+    height: 100%;
+    outline: none;
+    font-size: larger;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    width: 100%;
+}
+.buttons{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input[type="button"]{
+    height: 4.5vw;
+    width: 4.5vw;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.719);
+    background-color: #3B4454;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 1vh;
+}

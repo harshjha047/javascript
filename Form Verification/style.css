@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+form{
+    height: 70vh;
+    width: 35vw;
+    background-color: rgb(247, 247, 247);
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vw;
+}
+.box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+input,textarea{
+    height: 5vh;
+    width: 70%;
+    background-color: #11111100;
+    border: none;
+    outline: none;
+    padding: 2vh;
+    font-size: 2vh;
+    border-bottom: 1px solid #ccccccd7;
+    font-size: 16px;
+}
+textarea{
+    height: 20vh;
+    resize: none;
+}
+button{
+    padding: 1vh 6vh;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.5vh;
+    font-weight: 600;
+}
+.error{
+    position:absolute;
+    right: 0;
+    color: red;
+    /* display: none; */
+}
+i{
+    color: rgb(0, 255, 0);
+}

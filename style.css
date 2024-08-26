@@ -1,3 +1,13 @@
+:root{
+    --m:4rem;
+    --red:#ff0000;
+    --pink:#ff00c8;
+    --purpul:#c300ff;
+    --blue:#2600ff;
+    --green:#09ff00;
+    --yellow:#fbff00;
+    --orange:#ffbb00;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,8 +26,51 @@ body{
 a{
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     border-radius: 5px;
     font-size: 200px;
+     */
+    border: calc(0.08 * var(--m)) solid transparent;
+    position: relative;
+    font-size: 200px;
     font-weight: 600;
+    border-top: 1px solid #ffffff2a;
+    border-radius: calc(0.7 * var(--m));
+    padding: calc(0.5 * var(--m)) calc(1* var(--m));
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(#121213,#121213),
+                linear-gradient(#121213 50%, rgba(18,18,19,0.6) 80%, rgba(18,18,19,0)),
+                linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue),var(--purpul),var(--pink),var(--red));
+    background-size: 200%;
+    background-origin:border-box ;
+    background-clip: padding-box, border-box, border-box;
+    animation: animate 2s infinite linear;
+}
+
+a::before{
+    content: "";
+    background: linear-gradient(90deg,var(--orange), var(--yellow), var(--green), var(--blue),var(--purpul),var(--pink),var(--red));
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: -20%;
+    z-index: -5;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    filter: blur(calc(0.8 * var(--m)));
+}
+a:hover,a:hover::before{
+    animation: animate 0.5 infinite linear;
+}
+@keyframes animate {
+    0% {background-position: 0;}
+    100% {background-position: 200%;}
+}
+
+@media screen and (min-width: 1000px) {
+    :root{
+        --m:2rem;
+    }
 }
